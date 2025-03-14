@@ -14,7 +14,6 @@ This file provides details about all scripts used in the project to generate dat
 
 ✔ Fetches real-time resource usage using `kubectl top pod`.  
 ✔ Extracts network and disk I/O from pod stats.  
-
 ✔ Saves logs for documentation and analysis.  
 
 
