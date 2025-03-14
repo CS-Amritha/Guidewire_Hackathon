@@ -1,0 +1,113 @@
+timestamp,namespace,pod_name,cpu_usage_millicores,memory_usage_mib,network_io_kbps,disk_io_kbps,log_lines,error_count,performance_label
+2025-03-09T12:33:24.857171,default,nginx-deployment-86c57bc6b8-48xd7,1,7,1.212890625,1495682410.0,"2025/03/09 04:48:43 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/03/09 04:48:43 [notice] 1#1: start worker processes
+2025/03/09 04:48:43 [notice] 1#1: start worker process 29
+2025/03/09 04:48:43 [notice] 1#1: start worker process 30
+2025/03/09 04:48:43 [notice] 1#1: start worker process 31
+2025/03/09 04:48:43 [notice] 1#1: start worker process 32
+2025/03/09 04:48:43 [notice] 1#1: start worker process 33
+2025/03/09 04:48:43 [notice] 1#1: start worker process 34
+2025/03/09 04:48:43 [notice] 1#1: start worker process 35
+2025/03/09 04:48:43 [notice] 1#1: start worker process 36",0,bad
+2025-03-09T12:33:25.953745,default,nginx-deployment-86c57bc6b8-txrlj,1,6,1.14453125,1495696914.0,"2025/03/09 04:48:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/03/09 04:48:40 [notice] 1#1: start worker processes
+2025/03/09 04:48:40 [notice] 1#1: start worker process 29
+2025/03/09 04:48:40 [notice] 1#1: start worker process 30
+2025/03/09 04:48:40 [notice] 1#1: start worker process 31
+2025/03/09 04:48:40 [notice] 1#1: start worker process 32
+2025/03/09 04:48:40 [notice] 1#1: start worker process 33
+2025/03/09 04:48:40 [notice] 1#1: start worker process 34
+2025/03/09 04:48:40 [notice] 1#1: start worker process 35
+2025/03/09 04:48:40 [notice] 1#1: start worker process 36",0,bad
+2025-03-09T12:33:26.392547,default,nginx-pod,1,6,1.212890625,1495742610.0,"2025/03/09 04:48:21 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/03/09 04:48:21 [notice] 1#1: start worker processes
+2025/03/09 04:48:21 [notice] 1#1: start worker process 29
+2025/03/09 04:48:21 [notice] 1#1: start worker process 30
+2025/03/09 04:48:21 [notice] 1#1: start worker process 31
+2025/03/09 04:48:21 [notice] 1#1: start worker process 32
+2025/03/09 04:48:21 [notice] 1#1: start worker process 33
+2025/03/09 04:48:21 [notice] 1#1: start worker process 34
+2025/03/09 04:48:21 [notice] 1#1: start worker process 35
+2025/03/09 04:48:21 [notice] 1#1: start worker process 36",0,bad
+2025-03-09T12:33:26.822605,default,nginx-statefulset-0,1,6,1.212890625,1495797414.0,"2025/03/09 04:49:02 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/03/09 04:49:02 [notice] 1#1: start worker processes
+2025/03/09 04:49:02 [notice] 1#1: start worker process 29
+2025/03/09 04:49:02 [notice] 1#1: start worker process 30
+2025/03/09 04:49:02 [notice] 1#1: start worker process 31
+2025/03/09 04:49:02 [notice] 1#1: start worker process 32
+2025/03/09 04:49:02 [notice] 1#1: start worker process 33
+2025/03/09 04:49:02 [notice] 1#1: start worker process 34
+2025/03/09 04:49:02 [notice] 1#1: start worker process 35
+2025/03/09 04:49:02 [notice] 1#1: start worker process 36",0,bad
+2025-03-09T12:33:27.372759,default,nginx-statefulset-1,1,6,1.14453125,1495851786.0,"2025/03/09 04:49:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/03/09 04:49:11 [notice] 1#1: start worker processes
+2025/03/09 04:49:11 [notice] 1#1: start worker process 30
+2025/03/09 04:49:11 [notice] 1#1: start worker process 31
+2025/03/09 04:49:11 [notice] 1#1: start worker process 32
+2025/03/09 04:49:11 [notice] 1#1: start worker process 33
+2025/03/09 04:49:11 [notice] 1#1: start worker process 34
+2025/03/09 04:49:11 [notice] 1#1: start worker process 35
+2025/03/09 04:49:11 [notice] 1#1: start worker process 36
+2025/03/09 04:49:11 [notice] 1#1: start worker process 37",0,bad
+2025-03-09T12:33:27.834513,kube-system,coredns-668d6bf9bc-gmcjx,13,21,0.0,0.0,"[INFO] 10.244.0.69:55685 - 41041 ""A IN iperf-server.default.svc.cluster.local. udp 56 false 512"" NXDOMAIN qr,aa,rd 149 0.008839375s
+[INFO] 10.244.0.69:55685 - 63572 ""AAAA IN iperf-server.default.svc.cluster.local. udp 56 false 512"" NXDOMAIN qr,aa,rd 149 0.077107375s
+[INFO] 10.244.0.69:47636 - 59871 ""A IN iperf-server.svc.cluster.local. udp 48 false 512"" NXDOMAIN qr,aa,rd 141 0.000554875s
+[INFO] 10.244.0.69:47636 - 56797 ""AAAA IN iperf-server.svc.cluster.local. udp 48 false 512"" NXDOMAIN qr,aa,rd 141 0.000163041s
+[INFO] 10.244.0.69:33075 - 11258 ""AAAA IN iperf-server.cluster.local. udp 44 false 512"" NXDOMAIN qr,aa,rd 137 0.000445125s
+[INFO] 10.244.0.69:33075 - 32763 ""A IN iperf-server.cluster.local. udp 44 false 512"" NXDOMAIN qr,aa,rd 137 0.001491541s
+[INFO] 10.244.0.69:37176 - 51619 ""AAAA IN iperf-server. udp 30 false 512"" NXDOMAIN qr,rd,ra 30 0.08995125s
+[INFO] 10.244.0.69:37176 - 63150 ""A IN iperf-server. udp 30 false 512"" NXDOMAIN qr,rd,ra 30 0.089757417s
+[WARNING] plugin/health: Local health request to ""http://:8080/health"" took more than 1s: 1.421341625s
+[WARNING] plugin/health: Local health request to ""http://:8080/health"" took more than 1s: 1.110802751s",1499,alert
+2025-03-09T12:33:28.436851,kube-system,etcd-minikube,60,66,0.0,0.0,"{""level"":""info"",""ts"":""2025-03-09T07:00:51.786489Z"",""caller"":""traceutil/trace.go:171"",""msg"":""trace[1317698747] range"",""detail"":""{range_begin:/registry/ranges/serviceips; range_end:; response_count:1; response_revision:19824; }"",""duration"":""584.837292ms"",""start"":""2025-03-09T07:00:51.201554Z"",""end"":""2025-03-09T07:00:51.786391Z"",""steps"":[""trace[1317698747] 'agreement among raft nodes before linearized reading'  (duration: 252.706917ms)"",""trace[1317698747] 'range keys from bolt db'  (duration: 331.85475ms)""],""step_count"":2}
+{""level"":""warn"",""ts"":""2025-03-09T07:00:51.786635Z"",""caller"":""v3rpc/interceptor.go:197"",""msg"":""request stats"",""start time"":""2025-03-09T07:00:51.201442Z"",""time spent"":""585.135626ms"",""remote"":""127.0.0.1:55532"",""response type"":""/etcdserverpb.KV/Range"",""request count"":0,""request size"":31,""response count"":1,""response size"":112426,""request content"":""key:\""/registry/ranges/serviceips\"" limit:1 ""}
+{""level"":""info"",""ts"":""2025-03-09T07:00:54.193892Z"",""caller"":""traceutil/trace.go:171"",""msg"":""trace[1101161001] transaction"",""detail"":""{read_only:false; response_revision:19830; number_of_response:1; }"",""duration"":""191.601084ms"",""start"":""2025-03-09T07:00:53.988984Z"",""end"":""2025-03-09T07:00:54.180585Z"",""steps"":[""trace[1101161001] 'process raft request'  (duration: 161.574417ms)"",""trace[1101161001] 'store kv pair into bolt db' {req_type:put; key:/registry/services/endpoints/kube-system/k8s.io-minikube-hostpath; req_size:1091; } (duration: 23.022417ms)""],""step_count"":2}
+{""level"":""info"",""ts"":""2025-03-09T07:01:07.759388Z"",""caller"":""mvcc/index.go:214"",""msg"":""compact tree index"",""revision"":19587}
+{""level"":""info"",""ts"":""2025-03-09T07:01:07.837955Z"",""caller"":""mvcc/kvstore_compaction.go:72"",""msg"":""finished scheduled compaction"",""compact-revision"":19587,""took"":""75.953ms"",""hash"":4106277619,""current-db-size-bytes"":6127616,""current-db-size"":""6.1 MB"",""current-db-size-in-use-bytes"":1601536,""current-db-size-in-use"":""1.6 MB""}
+{""level"":""info"",""ts"":""2025-03-09T07:01:07.838071Z"",""caller"":""mvcc/hash.go:151"",""msg"":""storing new hash"",""hash"":4106277619,""revision"":19587,""compact-revision"":19338}
+{""level"":""warn"",""ts"":""2025-03-09T07:01:58.046464Z"",""caller"":""etcdserver/util.go:170"",""msg"":""apply request took too long"",""took"":""141.889542ms"",""expected-duration"":""100ms"",""prefix"":""read-only range "",""request"":""key:\""/registry/pods/kube-system/kube-scheduler-minikube\"" limit:1 "",""response"":""range_response_count:1 size:4644""}
+{""level"":""info"",""ts"":""2025-03-09T07:01:58.064068Z"",""caller"":""traceutil/trace.go:171"",""msg"":""trace[172373275] range"",""detail"":""{range_begin:/registry/pods/kube-system/kube-scheduler-minikube; range_end:; response_count:1; response_revision:19875; }"",""duration"":""223.943042ms"",""start"":""2025-03-09T07:01:57.836324Z"",""end"":""2025-03-09T07:01:58.060267Z"",""steps"":[""trace[172373275] 'agreement among raft nodes before linearized reading'  (duration: 40.693667ms)"",""trace[172373275] 'range keys from bolt db'  (duration: 90.750959ms)""],""step_count"":2}
+{""level"":""warn"",""ts"":""2025-03-09T07:03:03.558649Z"",""caller"":""etcdserver/util.go:170"",""msg"":""apply request took too long"",""took"":""139.605834ms"",""expected-duration"":""100ms"",""prefix"":""read-only range "",""request"":""key:\""/registry/health\"" "",""response"":""range_response_count:0 size:6""}
+{""level"":""info"",""ts"":""2025-03-09T07:03:03.590723Z"",""caller"":""traceutil/trace.go:171"",""msg"":""trace[1234617838] range"",""detail"":""{range_begin:/registry/health; range_end:; response_count:0; response_revision:19932; }"",""duration"":""250.496416ms"",""start"":""2025-03-09T07:03:03.375199Z"",""end"":""2025-03-09T07:03:03.589929Z"",""steps"":[""trace[1234617838] 'range keys from in-memory index tree'  (duration: 139.223083ms)""],""step_count"":1}",201,alert
+2025-03-09T12:33:29.732701,kube-system,kube-apiserver-minikube,221,284,0.0,0.0,"E0309 07:03:26.938706       1 conn.go:339] Error on socket receive: read tcp 192.168.49.2:8443->192.168.49.1:58338: use of closed network connection
+E0309 07:03:27.199241       1 conn.go:339] Error on socket receive: read tcp 192.168.49.2:8443->192.168.49.1:58352: use of closed network connection
+E0309 07:03:27.456328       1 conn.go:339] Error on socket receive: read tcp 192.168.49.2:8443->192.168.49.1:58378: use of closed network connection
+E0309 07:03:27.598873       1 conn.go:339] Error on socket receive: read tcp 192.168.49.2:8443->192.168.49.1:58398: use of closed network connection
+E0309 07:03:27.948710       1 conn.go:339] Error on socket receive: read tcp 192.168.49.2:8443->192.168.49.1:58428: use of closed network connection
+E0309 07:03:28.101414       1 conn.go:339] Error on socket receive: read tcp 192.168.49.2:8443->192.168.49.1:58452: use of closed network connection
+E0309 07:03:28.555844       1 conn.go:339] Error on socket receive: read tcp 192.168.49.2:8443->192.168.49.1:58480: use of closed network connection
+E0309 07:03:28.742693       1 conn.go:339] Error on socket receive: read tcp 192.168.49.2:8443->192.168.49.1:58508: use of closed network connection
+E0309 07:03:30.123853       1 conn.go:339] Error on socket receive: read tcp 192.168.49.2:8443->192.168.49.1:62172: use of closed network connection
+E0309 07:03:30.311426       1 conn.go:339] Error on socket receive: read tcp 192.168.49.2:8443->192.168.49.1:62180: use of closed network connection",8055,alert
+2025-03-09T12:33:30.839300,kube-system,kube-controller-manager-minikube,36,75,0.0,0.0,,1808,alert
+2025-03-09T12:33:31.522608,kube-system,kube-proxy-z9t62,6,24,1445191.7041015625,1496405898.0,"I0309 04:06:52.441319       1 server.go:499] ""Golang settings"" GOGC="""" GOMAXPROCS="""" GOTRACEBACK=""""
+I0309 04:06:52.491402       1 config.go:329] ""Starting node config controller""
+I0309 04:06:52.491478       1 shared_informer.go:313] Waiting for caches to sync for node config
+I0309 04:06:52.494525       1 config.go:105] ""Starting endpoint slice config controller""
+I0309 04:06:52.494545       1 shared_informer.go:313] Waiting for caches to sync for endpoint slice config
+I0309 04:06:52.495351       1 config.go:199] ""Starting service config controller""
+I0309 04:06:52.495362       1 shared_informer.go:313] Waiting for caches to sync for service config
+I0309 04:06:52.592227       1 shared_informer.go:320] Caches are synced for node config
+I0309 04:06:52.595337       1 shared_informer.go:320] Caches are synced for endpoint slice config
+I0309 04:06:52.595457       1 shared_informer.go:320] Caches are synced for service config",0,bad
+2025-03-09T12:33:32.041751,kube-system,kube-scheduler-minikube,25,34,0.0,0.0,"W0309 04:06:43.221416       1 authentication.go:397] Error looking up in-cluster authentication configuration: configmaps ""extension-apiserver-authentication"" is forbidden: User ""system:kube-scheduler"" cannot get resource ""configmaps"" in API group """" in the namespace ""kube-system""
+W0309 04:06:43.221523       1 authentication.go:398] Continuing without authentication configuration. This may treat all requests as anonymous.
+W0309 04:06:43.221647       1 authentication.go:399] To require authentication configuration lookup to succeed, set --authentication-tolerate-lookup-failure=false
+I0309 04:06:43.406277       1 server.go:166] ""Starting Kubernetes Scheduler"" version=""v1.32.0""
+I0309 04:06:43.406344       1 server.go:168] ""Golang settings"" GOGC="""" GOMAXPROCS="""" GOTRACEBACK=""""
+I0309 04:06:43.437234       1 secure_serving.go:213] Serving securely on 127.0.0.1:10259
+I0309 04:06:43.441107       1 configmap_cafile_content.go:205] ""Starting controller"" name=""client-ca::kube-system::extension-apiserver-authentication::client-ca-file""
+I0309 04:06:43.441137       1 shared_informer.go:313] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I0309 04:06:43.441176       1 tlsconfig.go:243] ""Starting DynamicServingCertificateController""
+I0309 04:06:43.541415       1 shared_informer.go:320] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::client-ca-file",1,alert
+2025-03-09T12:33:32.477524,kube-system,metrics-server-7fbb699795-mnp6m,12,40,0.0,0.0,,0,good
+2025-03-09T12:33:33.662519,kube-system,storage-provisioner,11,19,0.0,0.0,"I0309 04:48:53.964775       1 event.go:282] Event(v1.ObjectReference{Kind:""PersistentVolumeClaim"", Namespace:""default"", Name:""nginx-storage-nginx-statefulset-0"", UID:""9afdbf7f-aec9-4cbf-ba57-bccf839d1274"", APIVersion:""v1"", ResourceVersion:""13212"", FieldPath:""""}): type: 'Normal' reason: 'ProvisioningSucceeded' Successfully provisioned volume pvc-9afdbf7f-aec9-4cbf-ba57-bccf839d1274
+I0309 04:49:03.912906       1 controller.go:1332] provision ""default/nginx-storage-nginx-statefulset-1"" class ""standard"": started
+I0309 04:49:03.916344       1 event.go:282] Event(v1.ObjectReference{Kind:""PersistentVolumeClaim"", Namespace:""default"", Name:""nginx-storage-nginx-statefulset-1"", UID:""423631e8-59a1-4b94-a657-5436110a71c4"", APIVersion:""v1"", ResourceVersion:""13244"", FieldPath:""""}): type: 'Normal' reason: 'Provisioning' External provisioner is provisioning volume for claim ""default/nginx-storage-nginx-statefulset-1""
+I0309 04:49:03.913712       1 storage_provisioner.go:61] Provisioning volume {&StorageClass{ObjectMeta:{standard    1d29c377-41f9-42f3-bc48-a30cea946dbe 269 0 2025-03-06 10:32:17 +0000 UTC <nil> <nil> map[addonmanager.kubernetes.io/mode:EnsureExists] map[kubectl.kubernetes.io/last-applied-configuration:{""apiVersion"":""storage.k8s.io/v1"",""kind"":""StorageClass"",""metadata"":{""annotations"":{""storageclass.kubernetes.io/is-default-class"":""true""},""labels"":{""addonmanager.kubernetes.io/mode"":""EnsureExists""},""name"":""standard""},""provisioner"":""k8s.io/minikube-hostpath""}
+ storageclass.kubernetes.io/is-default-class:true] [] []  [{kubectl-client-side-apply Update storage.k8s.io/v1 2025-03-06 10:32:17 +0000 UTC FieldsV1 {""f:metadata"":{""f:annotations"":{""."":{},""f:kubectl.kubernetes.io/last-applied-configuration"":{},""f:storageclass.kubernetes.io/is-default-class"":{}},""f:labels"":{""."":{},""f:addonmanager.kubernetes.io/mode"":{}}},""f:provisioner"":{},""f:reclaimPolicy"":{},""f:volumeBindingMode"":{}}}]},Provisioner:k8s.io/minikube-hostpath,Parameters:map[string]string{},ReclaimPolicy:*Delete,MountOptions:[],AllowVolumeExpansion:nil,VolumeBindingMode:*Immediate,AllowedTopologies:[]TopologySelectorTerm{},} pvc-423631e8-59a1-4b94-a657-5436110a71c4 &PersistentVolumeClaim{ObjectMeta:{nginx-storage-nginx-statefulset-1  default  423631e8-59a1-4b94-a657-5436110a71c4 13244 0 2025-03-09 04:49:03 +0000 UTC <nil> <nil> map[app:nginx] map[volume.beta.kubernetes.io/storage-provisioner:k8s.io/minikube-hostpath volume.kubernetes.io/storage-provisioner:k8s.io/minikube-hostpath] [] [kubernetes.io/pvc-protection]  [{kube-controller-manager Update v1 2025-03-09 04:49:03 +0000 UTC FieldsV1 {""f:metadata"":{""f:annotations"":{""."":{},""f:volume.beta.kubernetes.io/storage-provisioner"":{},""f:volume.kubernetes.io/storage-provisioner"":{}},""f:labels"":{""."":{},""f:app"":{}}},""f:spec"":{""f:accessModes"":{},""f:resources"":{""f:requests"":{""."":{},""f:storage"":{}}},""f:volumeMode"":{}}}}]},Spec:PersistentVolumeClaimSpec{AccessModes:[ReadWriteOnce],Resources:ResourceRequirements{Limits:ResourceList{},Requests:ResourceList{storage: {{1073741824 0} {<nil>} 1Gi BinarySI},},},VolumeName:,Selector:nil,StorageClassName:*standard,VolumeMode:*Filesystem,DataSource:nil,},Status:PersistentVolumeClaimStatus{Phase:Pending,AccessModes:[],Capacity:ResourceList{},Conditions:[]PersistentVolumeClaimCondition{},},} nil} to /tmp/hostpath-provisioner/default/nginx-storage-nginx-statefulset-1
+I0309 04:49:03.927706       1 controller.go:1439] provision ""default/nginx-storage-nginx-statefulset-1"" class ""standard"": volume ""pvc-423631e8-59a1-4b94-a657-5436110a71c4"" provisioned
+I0309 04:49:03.927733       1 controller.go:1456] provision ""default/nginx-storage-nginx-statefulset-1"" class ""standard"": succeeded
+I0309 04:49:03.927743       1 volume_store.go:212] Trying to save persistentvolume ""pvc-423631e8-59a1-4b94-a657-5436110a71c4""
+I0309 04:49:03.933950       1 volume_store.go:219] persistentvolume ""pvc-423631e8-59a1-4b94-a657-5436110a71c4"" saved
+I0309 04:49:03.934072       1 event.go:282] Event(v1.ObjectReference{Kind:""PersistentVolumeClaim"", Namespace:""default"", Name:""nginx-storage-nginx-statefulset-1"", UID:""423631e8-59a1-4b94-a657-5436110a71c4"", APIVersion:""v1"", ResourceVersion:""13244"", FieldPath:""""}): type: 'Normal' reason: 'ProvisioningSucceeded' Successfully provisioned volume pvc-423631e8-59a1-4b94-a657-5436110a71c4",0,good
