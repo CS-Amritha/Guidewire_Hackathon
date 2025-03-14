@@ -11,11 +11,10 @@ This file provides details about all scripts used in the project to generate dat
 - Saves data to a CSV file 
 
 **Key Features:**
+
 ✔ Fetches real-time resource usage using `kubectl top pod`.  
 ✔ Extracts network and disk I/O from pod stats.  
 
 ✔ Saves logs for documentation and analysis.  
 
-**Usage:**  
-```bash
-python3 trainable_params_monitor.py
+
