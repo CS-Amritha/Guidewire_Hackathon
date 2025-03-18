@@ -16,11 +16,17 @@ historical and real-time cluster metrics.
 Use Case ⚙️
 ---
 
-Progress % 
----
- - Data Collection - 75 %
- - Live Data Tracking - 40 %
- - ML Model - 20 % 
+Progress %  
+---  
+### 📌 Data Collection 
+🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜  60%  
+
+### 📌 Live Data Tracking  
+🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜  40%  
+
+### 📌 ML Model 
+🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜  20%  
+
 
 
 Problem Statement ❓ - Phase II
