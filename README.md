@@ -16,7 +16,7 @@ historical and real-time cluster metrics.
 Use Case ⚙️
 ---
 
-Progress %  
+Phase I Progress Bar 
 ---  
 ### 📌 Data Collection 
 🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜  60%  
