@@ -19,14 +19,16 @@ Use Case ⚙️
 Phase I Progress Bar 
 ---  
 ### 📌 Data Collection 
-🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜  60%  
-
-### 📌 Live Data Tracking  
-🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜  40%  
+🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜  60%   
 
 ### 📌 ML Model 
-🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜  60%  
+🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜  60% 
 
+### 📌 Live Data Tracking  
+🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜  40% 
+
+Deliverables for Phase I
+---
 
 
 Problem Statement ❓ - Phase II
@@ -39,9 +41,6 @@ to mitigate potential failures in the Kubernetes cluster.
 - Scaling pods when resource exhaustion is predicted
 - Restarting or relocating pods when failures are forecasted
 - Optimizing CPU or memory allocation when bottlenecks are detected
-
-Progress Bar 
----
 
 
 ## Tech Stack & Tools 🛠️
