@@ -74,7 +74,7 @@ Each recommendation includes a **confidence score** (eg: "90% sure this will fix
 
 
 ## Implementation Roadmap
-| Phase | Deliverables |
+|  | Deliverables |
 |-------|-------------|
 | 🚀 **1** | Data Collection (integrate with Kubernetes monitoring tools) |
 | 📊 **2** | Feature Engineering (refine key metrics for prediction) |
