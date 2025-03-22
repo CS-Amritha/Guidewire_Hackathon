@@ -58,7 +58,7 @@ Each recommendation includes a **confidence score** (eg: "90% sure this will fix
 ### 📩 Automated Notifications & Fixes
 - Sends alerts via **Slack or email** with a summary of the issue, root cause, and suggested fix.
 - Allows engineers to **apply fixes with a single click** or automatically resolve issues with approval.
-- Continuously **learns from past incidents** to improve future predictions.
+
 
 ## Example: Biko in Action
 ### Scenario: High Memory Usage Crash
