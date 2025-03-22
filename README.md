@@ -72,14 +72,6 @@ Each recommendation includes a **confidence score** (eg: "90% sure this will fix
 
 5️⃣ With approval, Biko **automatically applies the fix, preventing further crashes.**
 
-## Why Biko Stands Out
-Detects and resolves issues **before** they escalate.
-
-Keeps Kubernetes clusters **stable and optimized**.
-
-Provides **data-driven, confidence-scored recommendations**.
-
-Becomes **smarter with every incident.**
 
 ## Implementation Roadmap
 | Phase | Deliverables |
