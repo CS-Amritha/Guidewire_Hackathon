@@ -45,16 +45,6 @@ Biko continuously tracks key metrics
 - Out of Memory (OOM) errors
 - Resource bottlenecks
 
-Instead of vague alerts, Biko provides **clear, actionable suggestions** 
-
-✅ "Increase memory limits by 20% to prevent a crash."
-
-✅ "Scale replicas to handle increased traffic."
-
-✅ "Restart the failing pod to restore stability."
-
-Each recommendation includes a **confidence score** (eg: "90% sure this will fix the issue").
-
 ### 📩 Automated Notifications & Fixes
 - Sends alerts via **Slack or email** with a summary of the issue, root cause, and suggested fix.
 - Allows engineers to **apply fixes with a single click** or automatically resolve issues with approval.
