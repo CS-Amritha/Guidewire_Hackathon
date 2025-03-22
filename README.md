@@ -86,11 +86,11 @@ Phase I Progress Bar
 ### 📌 Live Data Tracking  
 🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜  40% 
 
----
+
 
 
 Problem Statement ❓ - Phase II
-
+---
 Once issues are predicted, the next step is to automate or recommend actions for remediation. The challenge in Phase
 2 is to create an agent or system capable of responding to these predicted issues by suggesting or implementing actions
 to mitigate potential failures in the Kubernetes cluster.
