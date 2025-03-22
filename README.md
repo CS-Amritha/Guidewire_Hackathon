@@ -45,7 +45,7 @@ Biko continuously tracks key metrics
 - Out of Memory (OOM) errors
 - Resource bottlenecks
 
-### 📩 Automated Notifications & Fixes
+### Automated Notifications & Fixes  📩
 - Sends alerts via **Slack or email** with a summary of the issue, root cause, and suggested fix.
 - Allows engineers to **apply fixes with a single click** or automatically resolve issues with approval.
 
