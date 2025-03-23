@@ -1,6 +1,17 @@
 # Guidewire Hackathon - DevTrails 🚀
 
+```
+Project Structure
 
+├── dataset               # Contains all the .csv data generated using our script
+├── docs                  # Documentation.md
+├── models                # Two models in .h5 format
+├── src                   # Source code directory
+│   ├── data_collection   # Scripts used to generate data
+│   ├── live_capture_data # Script for live data capture & storage
+│   ├── model_training    # Scripts used to train the model
+└── README.md             # This file
+```
 Problem Statement ❓ - Phase I
 ---
 Kubernetes clusters can encounter failures such as pod crashes, resource bottlenecks, and network issues. The
