@@ -17,10 +17,10 @@ historical and real-time cluster metrics.
 Phase I Progress Bar 
 ---  
 ### 📌 Data Collection 
-🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜  60%   
+🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜  80%   
 
 ### 📌 ML Model 
-🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜  60% 
+🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜  80% 
 
 ### 📌 Live Data Tracking  
 🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜  40% 
