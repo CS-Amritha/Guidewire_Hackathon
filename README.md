@@ -28,7 +28,7 @@ historical and real-time cluster metrics.
 Phase I Progress Bar 
 ---  
 ### 📌 Data Collection 
-🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜  80%   
+🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜  70%   
 
 ### 📌 ML Model 
 🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜  70% 
