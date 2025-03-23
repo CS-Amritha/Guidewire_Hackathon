@@ -12,6 +12,7 @@ Project Structure
 
 ├── dataset               # Contains all the .csv data generated using our script
 ├── docs                  # Documentation.md
+├── presentation          # Presentation Phase I
 ├── models                # Two models in .h5 format
 ├── src                   # Source code directory
 │   ├── data_collection   # Scripts used to generate data
