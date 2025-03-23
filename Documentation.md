@@ -136,10 +136,26 @@ We explored multiple machine learning models to predict Kubernetes failures, foc
    - Developed two versions:
      - **v1:** Had issues with null values during preprocessing.
      - **v2:** Fixed preprocessing issues and fine-tuned for better performance.
+---
+## **5. Additional Work**
+
+### **Live Data Capture:**
+- Installed PostgreSQL to store real-time metrics and logs.
+- Developed a script to scrape live data from Kubernetes clusters and store it in the database.
+- Separated data into three tables: `nodes`, `pods`, and `deployments`.
+
+### **Use Case Development:**
+- Defined a use case leveraging a **Large Language Model (LLM)** for automated incident response.
+- Key features:
+  1. Real-time monitoring of Kubernetes workloads.
+  2. Root cause analysis (memory leaks, misconfigurations).
+  3. Actionable recommendations with confidence scores.
+  4. Notifications via Slack or email.
+  5. Option to automatically apply recommended changes (with user approval).
 
 ---
 
-## **5. Deliverables**
+## **6. Deliverables**
 
 1. **Trained Machine Learning Model:**
    - A GRU-based model capable of predicting Kubernetes failures (e.g., node/pod failures, resource exhaustion, network issues).
@@ -150,4 +166,43 @@ We explored multiple machine learning models to predict Kubernetes failures, foc
 
 3. **Documentation:**
    - This document provides a detailed explanation of our approach, key metrics, and model development process.
+  
+### **Learnings:**
+1. **Importance of Realistic Data:**
+   - Real-world data with proper labelling is critical for model performance.
+
+2. **Iterative Development:**
+   - Continuous improvement of scripts and models is essential.
+   - Collaboration and regular code reviews helped identify and fix issues early.
+
+3. **Integration with Kubernetes:**
+   - Understanding Kubernetes internals and using tools like Prometheus and `kubectl` is crucial for effective data collection.
+     
+---
+## **7. Next Steps**
+
+1. **Refine Data Generation:**
+   - Optimize the script to generate more realistic and diverse failure scenarios.
+   - Improve labelling accuracy based on real-world error patterns.
+
+2. **Enhance Model Performance:**
+   - Train the GRU model on a larger and more diverse dataset.
+   - Experiment with other anomaly detection techniques.
+
+3. **Real-Time Prediction:**
+   - Integrate the trained model with the live data capture pipeline.
+   - Implement real-time failure prediction and alerting.
+
+4. **Kubernetes Integration:**
+   - Package the solution in Kubernetes for seamless deployment and scalability.
+
+
+
+
+Phase 1 of the project laid a strong foundation for predicting Kubernetes failures. Over the course of 20 days, our team dedicated significant time and effort to understanding Kubernetes, developing a data generation pipeline, and exploring machine learning models. While challenges remain, the team is confident in the approach and excited to move forward with refining the solution in the subsequent phase.
+
+---
+
+**Date:** 23.03.2025
+
 
