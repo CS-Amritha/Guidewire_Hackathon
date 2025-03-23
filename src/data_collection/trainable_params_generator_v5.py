@@ -466,7 +466,7 @@ def main():
                 print(f"No new events for pod {namespace}/{pod_name}")
 
             # 🔍 Run error checks on pod metrics + events
-            perrors = check_node_error(pod_metrics, pod_events)
+            perrors = check_pod_error(pod_metrics, pod_events)
 
             for i in [
                 "CPU Throttling", "High CPU Usage", "OOMKilled (Out of Memory)",
