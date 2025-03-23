@@ -54,11 +54,14 @@ to mitigate potential failures in the Kubernetes cluster.
 ## Tech Stack & Tools 🛠️
 
   <p>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" width="60"/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus" width="60"/>
-    <img src="https://locust.io/static/img/logo.png" alt="Locust" width="170"/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="60"/>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg" alt="Shell Scripts" width="60"/>
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" width="60"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus" width="60"/>
+  <img src="https://avatars.githubusercontent.com/u/59082378?v=4" alt="Chaos Mesh" width="60"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="60"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg" alt="Shell Scripts" width="60"/>
+  <img src="https://kind.sigs.k8s.io/logo/logo.png" alt="Kubernetes in Docker (kind)" width="75"/>
+  <img src="https://avatars.githubusercontent.com/u/7739233?s=280&v=4" alt="Chaos Mesh" width="75"/>
+
   </p>
 
 
