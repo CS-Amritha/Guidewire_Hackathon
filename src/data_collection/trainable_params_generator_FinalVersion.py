@@ -50,7 +50,7 @@ def check_node_error(metrics, events):
     errors = []
 
     # CPU Pressure
-    cpu_usage_threshold = 80  # Example threshold in percentage
+    cpu_usage_threshold = 80  
     cpu_usage = metrics.get("node_cpu_usage")
     if cpu_usage is not None and cpu_usage > cpu_usage_threshold:
         errors.append("CPU Pressure")
@@ -60,7 +60,7 @@ def check_node_error(metrics, events):
         errors.append("Disk Pressure")
 
     # Memory Pressure
-    memory_usage_threshold = 90  # Threshold in percentage
+    memory_usage_threshold = 90  
     memory_usage = metrics.get("node_memory_usage")
     if memory_usage is not None and memory_usage > memory_usage_threshold:
         errors.append("Memory Pressure")
@@ -70,7 +70,7 @@ def check_node_error(metrics, events):
         errors.append("Disk Pressure")
 
     for event in events:
-        a = "".join(event.message) if event.message else ""  # Handle None case
+        a = "".join(event.message) if event.message else "" 
 
         if "MemoryPressure" in a:
             errors.append("Memory Pressure")
@@ -98,7 +98,7 @@ def check_pod_error(metrics, events):
 
 
     # CPU Throttling
-    cpu_throttle_threshold = 0.75  # Example threshold in percentage
+    cpu_throttle_threshold = 0.75  
     if metrics.get("cpu_throttling", 0) > cpu_throttle_threshold:
         errors.append("CPU Throttling")
 
@@ -109,10 +109,10 @@ def check_pod_error(metrics, events):
         errors.append("High CPU Usage")
   
 
-    # OOMKilled (Out of Memory)
+
 
     for event in events:
-        a = "".join(event.message) if event.message else ""  # Handle None case
+        a = "".join(event.message) if event.message else ""  
 
         if "OOMKilled" in a:
             errors.append("Out of Memory (OOMKilled)")
@@ -150,7 +150,7 @@ def check_deployment_error(metrics, events):
         errors.append("Unavailable Pods")
 
     for event in events:
-        a = "".join(event.message) if event.message else ""  # Handle None case
+        a = "".join(event.message) if event.message else ""  
 
         if "ErrImagePull" in a or "ImagePullBackOff" in a:
             errors.append("ImagePullFailure")
@@ -447,22 +447,22 @@ def main():
                 results = run_promql_query(query)
                 pod_metrics[metric_name] = float(results[0]['value'][1]) if results else None
 
-            # 🎯 Filter events specific to this pod
+            # Filter events specific to this pod
             pod_events = filter_events_for_pod(events, namespace, pod_name)
 
-            # 🔍 Run error checks on pod metrics + events
+            # Run error checks on pod metrics + events
             perrors = check_pod_error(pod_metrics, pod_events)
             for i in [
                 "CPU Throttling", "High CPU Usage", "OOMKilled (Out of Memory)",
                 "CrashLoopBackOff", "ContainerNotReady", "PodUnschedulable",
-                "NodePressure", "ImagePullFailure"  # (typo: should be ImagePullFailure)
+                "NodePressure", "ImagePullFailure" 
             ]:
                 pod_metrics[i] = 1 if i in perrors else 0
 
             # Store pod metrics
             pod_data[f"{namespace}/{pod_name}"] = pod_metrics
 
-            # Optional: Merge deployment & node data
+            
             deployment_key = next(
                 (key for key in deployment_data
                 if key.startswith(f"{namespace}/") and pod_name.startswith(key.split("/", 1)[1])),
