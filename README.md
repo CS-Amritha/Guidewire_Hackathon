@@ -1,4 +1,11 @@
-# Guidewire Hackathon 2025 - DevTrails 🚀
+# Guidewire Hackathon 2025 - DevTrails 🚀  
+
+# **Team ClusterBusters** 👩‍💻
+
+Amrita Vishwa Vidyapeetham, Coimbatore  
+B.Tech Computer Science (Cyber Security)    
+
+<br>
 
 ```
 Project Structure
