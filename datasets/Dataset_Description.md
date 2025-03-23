@@ -4,7 +4,7 @@ This file describes all the datasets used in the project.
 
 ---
 
-## **1. Dataset_v1.csv**
+## **1. Dataset_1.csv**
 **Description:**  
 - Collected using `kubectl top pod` in minikube
 - Contains **2,500** entries of pod resource utilization
@@ -24,7 +24,7 @@ This file describes all the datasets used in the project.
 
 ---
 
-## **2. Dataset_v2.csv**
+## **2. Dataset_2.csv**
 
 **Description:**  
 - A smaller, more focused dataset derived from Dataset_v1.csv.
@@ -59,7 +59,7 @@ The `performance_label` column is derived based on the following rules:
 
 ---
 
-## **3. Dataset_v3.csv**
+## **3. Dataset_3.csv**
 
 **Description:**  
 - Collected using Prometheus queries to gather detailed cluster and pod-level metrics.
