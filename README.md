@@ -1,4 +1,4 @@
-# Guidewire Hackathon - DevTrails 🚀
+# Guidewire Hackathon 2025 - DevTrails 🚀
 
 ```
 Project Structure
