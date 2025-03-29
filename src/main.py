@@ -84,7 +84,7 @@ def main():
             combined_data_nodes = [{"timestamp": timestamp,  "node_name": node_name, **node_metrics[node_name]} for node_name in node_metrics]
             
             # Combine deployment data
-            combined_data_deployments = [{"timestamp": timestamp, "node_name": deployment_metrics[deployment_key].get("node_name"), **deployment_metrics[deployment_key]} for deployment_key in deployment_metrics]
+            combined_data_deployments = [{"timestamp": timestamp, **deployment_metrics[deployment_key]} for deployment_key in deployment_metrics]
             
             # Save pod metrics to CSV (append mode)
             csv_pod_path = exporter.save_to_csv(combined_data_pods, filename="k8s_pod_metrics.csv")
