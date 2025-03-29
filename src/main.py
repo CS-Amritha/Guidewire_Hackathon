@@ -57,61 +57,21 @@ def main():
             new_events = get_new_events(all_events)
             
             # Collect metrics for all resources
-            node_metrics = collect_all_nodes_metrics(nodes)
             pod_metrics = collect_all_pods_metrics(pods)
+            node_metrics = collect_all_nodes_metrics(nodes)
             deployment_metrics = collect_all_deployments_metrics(deployments)
             
-            # Process node metrics and add error flags
-            for node_name, metrics in node_metrics.items():
-                node_events = filter_events_for_node(new_events, node_name)
-                errors = check_node_errors(metrics, node_events)
-                node_metrics[node_name] = add_node_error_flags(metrics, errors)
-            
-            # Process deployment metrics and add error flags
-            for deployment_key, metrics in deployment_metrics.items():
-                namespace, deployment_name = deployment_key.split("/", 1)
-                deployment_events = filter_events_for_deployment(new_events, namespace, deployment_name)
-                errors = check_deployment_errors(metrics, deployment_events)
-                deployment_metrics[deployment_key] = add_deployment_error_flags(metrics, errors)
-            
-            # Combine metrics for pods with their respective node and deployment
+            # Combine pod data
             combined_data_pods = []
-            combined_data_nodes = []
-            combined_data_deployments = []
             
             for pod_key, pod_metric in pod_metrics.items():
                 namespace, pod_name = pod_key.split("/", 1)
-                node_name = pod_metric["node"]
-                
-                # Get related node metrics
-                node_metric = node_metrics.get(node_name, {})
-                
-                # Find related deployment
-                deployment_key = next(
-                    (key for key in deployment_metrics
-                    if key.startswith(f"{namespace}/") and pod_name.startswith(key.split("/", 1)[1])),
-                    None
-                )
                 
                 # Combine metrics for pod
                 combined_metric = {
                     "timestamp": timestamp,
                     **pod_metric
                 }
-                
-                # Add node metrics
-                combined_metric.update(node_metric)
-                
-                # Add deployment metrics or defaults
-                if deployment_key:
-                    combined_metric.update(deployment_metrics[deployment_key])
-                    combined_metric["deployment"] = deployment_key
-                else:
-                    # Add default deployment metrics
-                    combined_metric["deployment"] = "None"
-                    # Default deployment values in case of missing metrics
-                    for key in deployment_metrics.values() and next(iter(deployment_metrics.values()), {}):
-                        combined_metric[key] = 0
                 
                 # Check pod errors and add flags
                 pod_events = filter_events_for_pod(new_events, namespace, pod_name)
