@@ -1,13 +1,8 @@
-"""
-Exporter for saving metrics to CSV.
-"""
-
 import os
 import pandas as pd
 
-
 class CSVExporter:
-    """Class for exporting metrics data to CSV files."""
+    """Class for exporting metrics data to separate CSV files for nodes, pods, and deployments."""
     
     def __init__(self, data_dir="./data"):
         """
@@ -25,7 +20,7 @@ class CSVExporter:
     
     def save_to_csv(self, data, filename="k8s_pod_metrics.csv"):
         """
-        Save metrics data to a CSV file.
+        Save metrics data to a CSV file (append mode).
         
         Args:
             data (list): List of metric dictionaries
@@ -36,7 +31,7 @@ class CSVExporter:
         # Create a DataFrame from the data
         df = pd.DataFrame(data)
         
-        # Save to CSV
-        df.to_csv(filepath, index=False)
+        # Append to CSV (if the file exists, it will append; otherwise, it will create a new file)
+        df.to_csv(filepath, mode='a', header=not os.path.exists(filepath), index=False)
         
         return filepath

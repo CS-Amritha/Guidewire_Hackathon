@@ -1,7 +1,3 @@
-"""
-Main application entry point for Kubernetes monitoring.
-"""
-
 import time
 import pandas as pd
 from datetime import datetime
@@ -79,7 +75,9 @@ def main():
                 deployment_metrics[deployment_key] = add_deployment_error_flags(metrics, errors)
             
             # Combine metrics for pods with their respective node and deployment
-            combined_data = []
+            combined_data_pods = []
+            combined_data_nodes = []
+            combined_data_deployments = []
             
             for pod_key, pod_metric in pod_metrics.items():
                 namespace, pod_name = pod_key.split("/", 1)
@@ -95,7 +93,7 @@ def main():
                     None
                 )
                 
-                # Combine metrics
+                # Combine metrics for pod
                 combined_metric = {
                     "timestamp": timestamp,
                     **pod_metric
@@ -111,6 +109,7 @@ def main():
                 else:
                     # Add default deployment metrics
                     combined_metric["deployment"] = "None"
+                    # Default deployment values in case of missing metrics
                     for key in deployment_metrics.values() and next(iter(deployment_metrics.values()), {}):
                         combined_metric[key] = 0
                 
@@ -119,11 +118,25 @@ def main():
                 pod_errors = check_pod_errors(pod_metric, pod_events)
                 combined_metric = add_pod_error_flags(combined_metric, pod_errors)
                 
-                combined_data.append(combined_metric)
+                combined_data_pods.append(combined_metric)
             
-            # Save combined metrics to CSV
-            csv_path = exporter.save_to_csv(combined_data)
-            print(f"Metrics saved to {csv_path} at {timestamp}")
+            # Combine node data
+            combined_data_nodes = [{"timestamp": timestamp, **node_metrics[node_name]} for node_name in node_metrics]
+            
+            # Combine deployment data
+            combined_data_deployments = [{"timestamp": timestamp, **deployment_metrics[deployment_key]} for deployment_key in deployment_metrics]
+            
+            # Save pod metrics to CSV (append mode)
+            csv_pod_path = exporter.save_to_csv(combined_data_pods, filename="k8s_pod_metrics.csv")
+            print(f"Pod metrics saved to {csv_pod_path} at {timestamp}")
+            
+            # Save node metrics to CSV (append mode)
+            csv_node_path = exporter.save_to_csv(combined_data_nodes, filename="k8s_node_metrics.csv")
+            print(f"Node metrics saved to {csv_node_path} at {timestamp}")
+            
+            # Save deployment metrics to CSV (append mode)
+            csv_deployment_path = exporter.save_to_csv(combined_data_deployments, filename="k8s_deployment_metrics.csv")
+            print(f"Deployment metrics saved to {csv_deployment_path} at {timestamp}")
             
             # Wait for next polling interval
             time.sleep(POLLING_INTERVAL)
