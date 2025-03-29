@@ -1,0 +1,10 @@
+# Ignore Python cache files and directories
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
