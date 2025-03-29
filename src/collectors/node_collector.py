@@ -16,7 +16,7 @@ def collect_node_metrics(node_name):
     Returns:
         dict: Dictionary of node metrics
     """
-    node_metrics = {}
+    node_metrics = { "node_name": node_name}
     
     for metric_name, query_template in NODE_QUERIES.items():
         query = query_template.replace("{node}", node_name)
