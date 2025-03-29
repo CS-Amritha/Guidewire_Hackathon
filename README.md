@@ -1,4 +1,4 @@
-# Guidewire Hackathon 2025 - DevTrails 🚀  
+ 
 
 # **Team ClusterBusters** 👩‍💻
 
